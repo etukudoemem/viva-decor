@@ -18,7 +18,6 @@ main {
     align-items: center;
     height: 60px;
     margin-bottom: 30px;
-    background-color: aquamarine;
 }
 
 .nav-links ul {
@@ -54,8 +53,7 @@ main {
 .hero-flex1-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;   
 }
 
 #hero-heading {
@@ -71,6 +69,7 @@ main {
 .hero-image-one {
     width: 500px;
     height: 425px;
+    border-radius: 4px;
     background-color: cadetblue;
 }
 
@@ -81,6 +80,7 @@ main {
     line-height: 1.5;
     letter-spacing: 2px;
     margin-top: 20px;
+    margin-left: 0;
 }
 
 .hero-flex2-container {
@@ -114,7 +114,7 @@ main {
 
 #num {
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 500;
     color: #545454;
 }
 
@@ -140,11 +140,15 @@ main {
 .hero-image-two {
     width: 635px;
     height: 405px;
+    border-radius: 4px;
     background-color: antiquewhite;
-    margin-right: 80px;
+    margin-right: 85px;
 }
 
 .hero-arrow-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 150px;
     height: 150px;
     border-radius: 3px;
@@ -156,16 +160,14 @@ main {
 
 .services-container {
     width: 100%;
-    height: 350px;
-    /* background-color: coral; */
+    min-height: 350px;
 }
 
 .services-heading-container {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 60px;
-    /* background-color: aqua; */
+    min-height: 60px;
 }
 
 .dash {
@@ -184,7 +186,6 @@ main {
 .design-flex {
     display: flex;
     justify-content: flex-start;
-    /* background-color: darkkhaki; */
     margin-top: 100px;
     width: 100%;
     height: 200px;
@@ -197,7 +198,6 @@ main {
 .design-logo {
     width: 72px;
     height: 70px;
-    background-color: #1F1F1F;
 }
 
 .design-description {
@@ -208,7 +208,7 @@ main {
     font-size: 30px;
     font-weight: 600;
     color: #545454;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .design-description #design-text {
@@ -217,6 +217,7 @@ main {
     line-height: 1.5;
     color: #545454;
     margin-top: 30px;
+    margin-left: 0;
 }
 
 .learn-more-container {
@@ -243,7 +244,8 @@ main {
     font-weight: 500;
     color: #545454;
     line-height: 1.8;
-    margin-bottom: 3.5rem;
+    margin-left: 0;
+    margin-bottom: 3.4rem;
 }
 
 .accordion-container {
@@ -280,7 +282,7 @@ main {
     color: #fff;
     border-radius: 4px;
     background-color: #1F1F1F;
-    margin-top: 3.3rem;
+    margin-top: 3rem;
 }
 
 .steps-container {
@@ -288,7 +290,6 @@ main {
     height: 865px;
     margin-top: 5rem;
     padding-top: 2rem;
-    /* background-color: cornflowerblue; */
 }
 
 .steps-flex {
@@ -308,9 +309,7 @@ main {
     display: flex;
     margin-top: 2.5rem;
     position: relative;
-    /* background-color: aliceblue; */
 }
-
 
 .vertical-line {
     width: 1px;
@@ -330,10 +329,13 @@ main {
 }
 
 .steps-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 72px;
     height: 72px;
     border-radius: 50%;
-    background-color: #000;
+    background-color: #1F1F1F;
 }
 
 .steps-description h6, p {
@@ -341,7 +343,7 @@ main {
 }
 
 .steps-description h6 {
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
     margin-bottom: 1.5rem;
     font-size: 30px;
     font-weight: 700;
@@ -385,11 +387,18 @@ main {
 
 .arrow {
     display: inline-block;
+    position: relative;
     margin-top: 1.5rem;
     margin-right: 2rem;
     width: 73px;
     height: 73px;
-    background-color: #000;
+    background-color: #F1F1F1;
+}
+
+.arrow svg {
+    position: absolute;
+    top: 30%;
+    left: 30%;
 }
 
 .testimonials {
@@ -399,7 +408,6 @@ main {
     position: absolute;
     top: 205px;
     right: 0;
-    /* background-color: blue; */
 }
 
 .testimonials .testimonial {
@@ -407,15 +415,18 @@ main {
     height: 600px;
     padding-left: 3rem;
     padding-top: 4rem;
-    background-color: lightsalmon;
+    background-color: #1F1F1F;
     border-left: 25px solid #FFFFFF;
     border-top: 25px solid #FFFFFF;
 }
 
 .testimonial .quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60px;
     height: 60px;
-    background-color: #000;
+    border-radius: 3px;
 }
 
 .testimonial > p {
@@ -425,13 +436,11 @@ main {
     margin-top: 4rem;
     line-height: 1.5;
     color: #FFFFFF;
-    /* background-color: #545454; */
 }
 
 .info-container {
     display: flex;
     align-items: center;
-    /* background-color: #9B9B9B; */
     margin-top: 4rem;
 }
 
@@ -465,7 +474,6 @@ main {
     height: 490px;
     padding-top: 2rem;
     margin: 5rem auto 0 auto;
-    /* background-color: cadetblue; */
 }
 
 .subscribe-container h2 {
@@ -502,7 +510,6 @@ main {
     position: absolute;
     top: 40px;
     left: 20px;
-    background-color: #000;
 }
 
 .email-icon-address p {
@@ -521,16 +528,56 @@ main {
     background-color: #1F1F1F;
 }
 
+.footer-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
 .footer-container {
-    padding: 0 2rem;
+    margin-top: 1rem;
+    min-height: fit-content;
 }
 
 .footer-flex {
     display: flex;
+    justify-content: space-between;
+    padding-top: 8rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .footer-logo  {
-    
+    max-width: 177px;
+    min-height: 48px;
+    color: #FFF;
+    margin-bottom: 10px;
 }
 
+.footer-items .social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5.35rem;
+    width: 140px;
+    height: 28px;
+    background-color: #fff;
+}
 
+.social-icons svg {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-items h6 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFF;
+    margin-bottom: 3rem;
+}
+
+.footer-items p {
+    color: #D1D1D1;
+    margin-left: 0;
+    margin-top: 2rem;
+}
