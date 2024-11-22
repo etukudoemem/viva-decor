@@ -109,7 +109,6 @@ main {
     height: 115px;
     margin-top: 100px;
     padding: 20px 0;
-    /* background-color: aqua; */
 }
 
 #num {
@@ -120,6 +119,7 @@ main {
 
 #numtext {
     color: #545454;
+    margin-left: 0;
 }
 
 .hero-bottomright {
@@ -561,7 +561,7 @@ main {
     margin-top: 5.35rem;
     width: 140px;
     height: 28px;
-    background-color: #fff;
+    background-color: #d9d9d9;
 }
 
 .social-icons svg {
